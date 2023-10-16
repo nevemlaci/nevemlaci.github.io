@@ -18,17 +18,21 @@ body{
     height: 10%;
 }
 
-
-.header_img{
-    margin: auto;
-    display: block;
+.container{
+    display: flex;
+    margin: 0 auto;
 }
 
+.centerimage{
+    display: block;
+    margin: auto;
+}
 
 h1{
     text-align: center;
     font-family: "Optima_Medium";
     color: #D4A373;
+    
 }
 
 pre{
@@ -38,7 +42,7 @@ pre{
 
 .text{
     position:absolute;
-    top: 50px;
+    top: 15%;
     left:0px;
     right:0px;
     bottom:0px;
