@@ -8,46 +8,76 @@
     src: url("fonts\\OPTIMA.woff");
 }
 
-body{
-    background: radial-gradient(circle, rgba(254,250,224,1) 10%, rgba(250,237,205,1) 90%);
-    color: #D4A373;
+/* Reset default margin and padding */
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+  background-color: #D5DDBC;
 }
 
-.fixed-header{
-    width: 100%;
-    height: 10%;
+/* Header styles */
+header {
+  background-color: #8A9B68;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  font-family: "Optima_Medium"
 }
 
-.container{
-    display: flex;
-    margin: 0 auto;
+a{
+  text-decoration: none;  
 }
 
-.centerimage{
-    display: block;
-    margin: auto;
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo img {
+  max-width: 100px; /* Set your desired width for the logo */
+}
+
+.title {
+  text-align: right;
+  background-color: #8A9B68;
 }
 
 h1{
-    text-align: center;
-    font-family: "Optima_Medium";
-    color: #D4A373;
-    
+    background-color: #8A9B68;
+    color: #931F1D;
 }
 
-pre{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: left;
+/* Main content styles */
+main {
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
 }
 
-.text{
-    position:absolute;
-    top: 15%;
-    left:0px;
-    right:0px;
-    bottom:0px;
-    margin-left: 20%;
-    padding-right: 20%;
-    overflow-y: scroll;
-    bottom: 0;
+p{
+    background-color: #B6C197;
+}
+
+.block {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  max-height: 80vh; /* Limit the maximum height of blocks to 80% of viewport height */
+  background-color: #B6C197;
+  border: solid 2px #937B63;
+  color: #931F1D;
+  box-sizing: border-box;
+  font-family: "Optima";
+}
+
+.left-block {
+  margin-right: 10px;
+}
+
+.right-block {
+  margin-left: 10px;
 }
